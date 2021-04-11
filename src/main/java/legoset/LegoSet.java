@@ -5,7 +5,6 @@ import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import lombok.Data;
 import movie.YearAdapter;
 
-import java.net.URL;
 import java.time.Year;
 import java.util.List;
 import java.util.Set;
@@ -39,5 +38,4 @@ public class LegoSet {
     private String number;
     @XmlAttribute
     private String url;
-    //private URL url;
 }

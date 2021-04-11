@@ -26,21 +26,17 @@ public class Main {
         legoSet.setPackaging(Packaging.BOX);
         legoSet.setTags(Set.of("Starfighter", "Stormtrooper", "Star Wars", "Solo"));
 
-
         var minifigs = new ArrayList<Minifig>();
         minifigs.add(new Minifig("Imperial Mudtrooper", 2));
         minifigs.add(new Minifig("Imperial Pilot", 1));
         minifigs.add(new Minifig("Mimban Stormtrooper", 1));
         legoSet.setMinifigs(minifigs);
 
-        //TODO: RATINGS
         legoSet.setRatings(new Ratings(4.4, 468));
 
         JAXBHelper.toXML(legoSet, System.out);
 
         JAXBHelper.toXML(legoSet, new FileOutputStream("legoset.xml"));
         System.out.println(JAXBHelper.fromXML(LegoSet.class, new FileInputStream("legoset.xml")));
-
-
     }
 }

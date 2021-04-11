@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @XmlType(propOrder = {"count", "avg"})
-
 @Data
 public class Ratings {
 
